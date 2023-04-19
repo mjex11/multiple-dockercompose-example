@@ -1,1 +1,1 @@
-docker-compose -f frontend-service/docker-compose.yml -f backend-service/docker-compose.yml up --build
+docker compose -f frontend-service/docker-compose.yml -f backend-service/docker-compose.yml up --build
