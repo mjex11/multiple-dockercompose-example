@@ -10,14 +10,14 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
-      - ${INIT_SQL_PATH}:/docker-entrypoint-initdb.d/init.sql
+      - ${REPO_DIRECTORY}/multiple-dockercompose-example/backend-service/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   backend:
-    build: .
+    build: ${REPO_DIRECTORY}/multiple-dockercompose-example/backend-service
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://user:password@db:5432/mydb
+      DATABASE_URL: postgres://user:password@db:5432/mydb?sslmode=disable
     ports:
       - "8000:8000"
 

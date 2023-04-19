@@ -1,10 +1,10 @@
 version: "3.9"
 services:
   frontend:
-    image : httpd:latest
+    build: .
     depends_on:
       - backend
     ports:
       - "8080:80"
     volumes :
-      - ~/tmp/multiple-dockercompose-example/frontend-service/public-html:/usr/local/apache2/htdocs
+      - ${REPO_DIRECTORY}/multiple-dockercompose-example/frontend-service/public-html:/usr/local/apache2/htdocs
