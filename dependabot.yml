@@ -13,3 +13,48 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+
+  - package-ecosystem: "docker"
+    directory: "/backend-service/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    label:
+      - "dependencies"
+      - "docker"
+      - "backend-service"
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  
+  - package-ecosystem: "gomod"
+    directory: "/backend-service/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    label:
+      - "dependencies"
+      - "go"
+      - "backend-service"
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+
+  - package-ecosystem: "docker"
+    directory: "/frontend-service/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    label:
+      - "dependencies"
+      - "docker"
+      - "frontend-service"
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
