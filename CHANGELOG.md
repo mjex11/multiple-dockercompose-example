@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/mjex11/multiple-dockercompose-example/compare/v1.0.0...v1.0.1) (2023-04-25)
+
+
+### Miscellaneous
+
+* Update README.md ([#5](https://github.com/mjex11/multiple-dockercompose-example/issues/5)) ([a67a0b2](https://github.com/mjex11/multiple-dockercompose-example/commit/a67a0b2d4ddf5c99b17582ce0e675944aaa331c8))
+
 ## 1.0.0 (2023-04-25)
 
 
