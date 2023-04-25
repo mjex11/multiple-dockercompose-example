@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    label:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
